@@ -13,6 +13,10 @@ import org.testng.annotations.Parameters;
 
 import utilities.ScreenshotUtility;
 
+
+
+
+
 public class Base {
 	public WebDriver driver;
 	public ScreenshotUtility scrshot;

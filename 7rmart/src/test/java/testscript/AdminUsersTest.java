@@ -10,7 +10,7 @@ import utilities.ExcelUtilities;
 
 
 public class AdminUsersTest extends Base {
-	@Test(retryAnalyzer=retry.Retry.class,description="Test case for access User Admin")
+	@Test(retryAnalyzer=retry.Retry.class,description="Test case for access User Admin",groups={"regression"})
 	public void verifyUseisabletoaccessadminuser() throws Exception {
 		String username=ExcelUtilities.readString(1, 0, "DataSheet1");
 		String password=ExcelUtilities.readString(1, 1, "DataSheet1");
@@ -36,7 +36,7 @@ public class AdminUsersTest extends Base {
 		boolean alertshown = adminuserspage.isAlertMessageDisplayed();
 		Assert.assertTrue(alertshown,"Test case failed");
 }
-	@Test(retryAnalyzer=retry.Retry.class,description="Test case for Deleting Admin User")
+	@Test(retryAnalyzer=retry.Retry.class,description="Test case for Deleting Admin User",groups={"regression"})
 	public void verifyUseisabletoDeleteadminUser() throws Exception {
 		String username=ExcelUtilities.readString(1, 0, "DataSheet1");
 		String password=ExcelUtilities.readString(1, 1, "DataSheet1");

@@ -9,7 +9,7 @@ import pages.ManageNewsPage;
 import utilities.ExcelUtilities;
 
 public class ManageNewsTest extends Base {
-	@Test(description="Test case for Manage News section")
+	@Test(description="Test case for Manage News section",groups={"regression"})
 	public void verifyUseisabletoClickManagenewsTab() throws Exception {
 		String username=ExcelUtilities.readString(1, 0, "DataSheet1");
 		String password=ExcelUtilities.readString(1, 1, "DataSheet1");
