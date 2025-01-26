@@ -3,26 +3,30 @@ package utilities;
 import com.github.javafaker.Faker;
 
 public class FakerUtility {
-Faker faker = new Faker();
-public String generateName() {
-	return faker.name().fullName();
-	
-}
+	Faker faker = new Faker();
 
-public String generateAddress() {
-	return faker.address().fullAddress();
+	public String generateName() {
+		return faker.name().fullName();
 
-}
-public int generateRandomNumber() {
-	return faker.number().randomDigit();
+	}
 
-}
-public String generaterandomEmail() {
-	return faker.internet().emailAddress();
+	public String generateAddress() {
+		return faker.address().fullAddress();
 
-}
-public String generatePassword() {
-	return faker.random().toString();
+	}
 
-}
+	public int generateRandomNumber() {
+		return faker.number().randomDigit();
+
+	}
+
+	public String generaterandomEmail() {
+		return faker.internet().emailAddress();
+
+	}
+
+	public String generatePassword() {
+		return faker.random().toString();
+
+	}
 }

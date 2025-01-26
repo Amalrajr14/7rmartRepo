@@ -14,8 +14,8 @@ public class ScreenshotUtility {
 	public void getScreenShot(WebDriver driver, String failedTestCase) throws IOException {
 		TakesScreenshot scrShot = (TakesScreenshot) driver; // take screen shot is an interface proveded by selenum
 		File screenShot = scrShot.getScreenshotAs(OutputType.FILE);
-		
-File f1 = new File(System.getProperty("user.dir") + "//OutputScreenShot");
+
+		File f1 = new File(System.getProperty("user.dir") + "//OutputScreenShot");
 		if (!f1.exists()) {
 			f1.mkdirs();
 		}

@@ -1,8 +1,8 @@
 testscript\Base.class
 generateReport\Listerners.class
 testscript\ManageProductTest.class
+testscript\HomeTest.class
 testscript\LoginTest.class
-testscript\LogoutTest.class
 testscript\ManageNewsTest.class
 testscript\AdminUsersTest.class
 testscript\ManageContactTest.class
